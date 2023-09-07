@@ -1,0 +1,69 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  .el-icon-s-fold,
+  .el-icon-s-unfold {
+    font-size: 25px;
+    cursor: pointer;
+  }
+  z-index: 22;
+}
+.avatar {
+  margin-top: 10px;
+  // display: block;
+  margin-right: 0px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.opt-wrapper {
+  display: flex;
+}
+.theme-picker {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.fullScreen {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  .icon-caozuo-quanping-shousuo,
+  .icon-icon-GIS_quanping {
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+.lang {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  cursor: pointer;
+  .el-dropdown {
+    color: #fff;
+  }
+}
+.logout {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+  i {
+    font-size: 25px;
+  }
+}
+.el-drawer__body {
+  color: #000 !important;
+  z-index: 999 !important;
+}
+.el-drawer {
+  color: #000 !important;
+  z-index: 999 !important;
+}
+::v-deep .el-drawer:focus {
+  outline: none;
+}

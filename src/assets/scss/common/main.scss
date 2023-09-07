@@ -1,0 +1,65 @@
+.el-main {
+  padding: 0 10px;
+  position: relative;
+  background: #f7f6fb;
+  // height: calc(100vh-118px);
+}
+.el-aside {
+  display: flex;
+  flex-direction: column;
+  background-color: #252c59;
+}
+.white-space {
+  height: 64px;
+}
+
+.header-info {
+  background-color: $theme-color;
+  height: 60px;
+  width: 500px;
+  position: fixed;
+}
+.el-header {
+  background-color: $theme-color;
+}
+.info-wrapper {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  color: #fff;
+  // background: red;
+}
+.logo {
+  width: 50px;
+  height: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.info-text {
+  display: flex;
+  flex-direction: column;
+}
+.system-name {
+  font-size: 18px;
+  font-family: MicrosoftYaHei-Bold;
+}
+.tag-line {
+  font-size: 14px;
+}
+.collapse {
+  width: 100%;
+  border-top: 1px solid #efefef;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.el-card {
+  // height: 100%;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}

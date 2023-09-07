@@ -1,0 +1,227 @@
+// 页面容器
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  // background: url('http://qiaokun.yuepong.com/crm-bg.png');
+  background: #fff;
+  background-size: 100% 100%;
+}
+// 顶部
+.top {
+  width: 100%;
+  height: 9.4%;
+}
+// 中间
+.middle {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+// 中间内容区域
+.middle-content {
+  position: relative;
+  flex: 1;
+  float: 1px;
+  height: 100%;
+  // background: #6699ff;
+}
+// 中间左侧与右侧部分
+.middle-left,
+.middle-right {
+  width: 16.7%;
+  height: 100%;
+}
+// 底部
+.footer {
+  display: flex;
+  height: 84px;
+  width: 100%;
+}
+.footer-space {
+  height: 100%;
+  width: 683px;
+  background: #f3a75c;
+}
+.footer-text {
+  background: #8267c4;
+  line-height: 84px;
+  height: 100%;
+  flex: 1;
+}
+.footer-text-style {
+  margin-left: 47px;
+  color: #fff;
+  font-size: 12px;
+}
+// 顶部左侧logo区域
+.company-logo {
+  position: absolute;
+  width: 111px;
+  height: 76px;
+  // background: #ccc;
+}
+// 顶部右侧图标区域
+.right-icon {
+  position: absolute;
+  right: 0;
+  width: 74px;
+  height: 74px;
+  // background: #ccc;
+}
+// 中间图片区域
+.middle-icon {
+  position: absolute;
+  top: 50%;
+  width: 600px;
+  height: 550px;
+  // background: #ccc;
+  transform: translate(0%, -50%);
+}
+// 表单登录盒子
+.login-box {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 350px;
+  height: 400px;
+  transform: translate(0%, -50%);
+}
+.login-text {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  color: #f3a75c;
+  // margin-bottom: 50px;
+  box-sizing: border-box;
+  padding: 40px 40px 20px 40px;
+  background-color: transparent !important;
+}
+.el-form-item {
+  width: 90%;
+  margin: 20px auto;
+  background-color: transparent !important;
+}
+
+.validcode-wrapper {
+  display: flex;
+}
+.validcode-input {
+  width: 50%;
+}
+.validcode {
+  width: 30%;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.change-btn-wrapper {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.change-btn-space {
+  // height: 30px;
+  flex: 1;
+}
+// 换一个按钮样式
+.change-btn {
+  padding: 0px !important;
+  color: #8267c4;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 0px;
+}
+.el-form-item__content {
+  background-color: transparent !important;
+}
+
+::v-deep .el-input__inner {
+  background: transparent !important;
+  background-image: none;
+  border-radius: 0px !important;
+  // border: none !important;
+  // border-bottom: 1px solid #dcdfe6 !important;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  // color: #fff;
+  font-size: inherit;
+  padding: 0 30px;
+  // -webkit-transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  // transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
+}
+v-deep .el-input__inner.el-input .el-input--prefix {
+  // background: aqua !important;
+}
+::v-deep .dialog_class {
+  // margin-right: 442px;
+  // margin-top: 300px !important;
+}
+
+.keep-pass {
+  margin-right: 5px;
+}
+.keep-pass-text {
+  font-size: 14px;
+  color: #ccc;
+}
+.btns {
+  width: 100%;
+  text-align: center;
+}
+.login-btn {
+  width: 90%;
+  height: 40px;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  background: #f3a75c; /*设置按钮为渐变颜色*/
+}
+// 中间左侧底部
+.middle-left-icon {
+  position: absolute;
+  bottom: 0;
+  width: 240px;
+  height: 36px;
+  // background: #ccc;
+}
+.middle-right-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 473px;
+  height: 20px;
+  // background: #ccc;
+  text-align: right;
+  color: #fff;
+  font-size: 13px;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+.bottom-opt {
+  color: #fff;
+  padding: 0px 22px;
+  display: flex;
+  justify-content: space-between;
+}
+// .keep-pass {
+//   margin-left: 0px;
+// }
+.forget-pass {
+  font-size: 14px;
+  color: #606266;
+  cursor: pointer;
+}
+.forget-pass:hover {
+  text-decoration: underline;
+}
+::v-deep .el-dialog__body {
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,41 @@
+.el-menu {
+  // height: 100%;
+  border: none;
+  z-index: 999;
+  font-size: 16px;
+}
+.collapse {
+  width: 100%;
+  // border-top: 1px solid #efefef;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width: 200px;
+  min-height: 400px;
+}
+::v-deep .el-submenu__title {
+  font-size: 16px !important;
+}
+.el-menu-item.is-active {
+  color: #fff !important;
+  background-color: #3f77f5 !important;
+}
+.iconfont {
+  color: #fff;
+  font-size: 16px !important;
+}
+span {
+  margin-left: 10px;
+}
+.el-menu-item {
+  font-size: 16px;
+  color: #fff;
+  i {
+    color: #fff;
+  }
+}

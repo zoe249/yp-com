@@ -1,0 +1,128 @@
+/* 定义全局样式表 */
+html,
+body,
+#app {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  // background-color: red;
+}
+
+// 表格样式调整
+.el-table {
+  th {
+    padding: 0px !important;
+    height: 35px;
+  }
+  td {
+    padding: 0px !important;
+    height: 35px;
+  }
+}
+// 滚动条样式
+.scoll {
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    // 滚动条整体样式
+    width: 10px; // 高宽分别对应横竖滚动条的尺寸
+    height: 1px;
+  }
+  &::-webkit-scrollbar-thumb {
+    // 滚动条里面小方块
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(66, 122, 246, 1) rgba(66, 122, 246, 1);
+    background: rgba(66, 122, 246, 0.5);
+    opacity: 0.5;
+  }
+  &::-webkit-scrollbar-track {
+    // 滚动条里面轨道
+    box-shadow: inset 0 0 5px rgba(66, 122, 246, 1);
+    opacity: 0.5;
+    border-radius: 10px;
+    background: #ededed;
+  }
+}
+.el-loading-spinner {
+  /*这个是自己想设置的 gif 加载动图*/
+  background-image: url('../images/loading.gif');
+  background-repeat: no-repeat;
+  background-size: 200px 120px;
+  height: 100px;
+  width: 100%;
+  background-position: center;
+  /*覆盖 element-ui 默认的 50% 因为此处设置了height:100%,所以不设置的话，会只显示一半，因为被top顶下去了*/
+  top: 40%;
+}
+.el-loading-spinner .circular {
+  /*隐藏 之前 element-ui 默认的 loading 动画*/
+  display: none;
+}
+.el-loading-spinner .el-loading-text {
+  /*为了使得文字在loading图下面*/
+  margin: 85px 0px;
+}
+// 全局分页样式
+.pagination-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 46px;
+  background: #cccddd;
+}
+.pagination {
+  margin-right: 20px;
+}
+// 列表头部新增按钮以及查询搜索重置等样式
+.add-btn {
+  margin-bottom: 10px !important;
+}
+.el-card {
+  margin-top: 10px;
+}
+.search-form-box {
+  width: 100%;
+  display: flex;
+}
+.search-form-wrapper {
+  width: 80%;
+}
+.search-btn-wrapper {
+  // width: 20%;
+  height: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  // justify-content: flex-end;
+  align-items: center;
+}
+.search-btn {
+  margin: 10px !important;
+}
+.el-dialog {
+  border-radius: 10px 10px 0px 0px !important;
+  // padding-left: 20px;
+}
+.el-dialog .el-dialog__header {
+  // background: #3f78f5;
+  color: #fff;
+  border-radius: 10px 10px 0px 0px !important;
+  height: 46px;
+  line-height: 36px;
+  padding: 0;
+}
+.dialog-title {
+  border-radius: 10px 10px 0px 0px !important;
+}
+.el-dialog .el-dialog__headerbtn {
+  top: 10px;
+  right: 20px;
+}
+.el-dialog .el-dialog__headerbtn .el-dialog__close {
+  color: #fff;
+  cursor: pointer;
+}
+.el-dialog .el-dialog__headerbtn .el-dialog__close:hover {
+  color: #fff;
+  cursor: pointer;
+}
